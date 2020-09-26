@@ -5,24 +5,24 @@ class User(models.Model):
     username=models.CharField(max_length=50)
     email=models.EmailField(max_length=50)
     admin=models.BooleanField()
-    phno=models.IntegerField(max_length=10)
+    phno=models.IntegerField()
 
 
 class Products(models.Model):
     productname=models.CharField(max_length=100)
     description=models.TextField(max_length=300)
-    quantity=models.IntegerField(max_length=100000)
+    quantity=models.IntegerField()
     donatorname=models.CharField(max_length=100)
-    donator_phno=models.IntegerField(max_length=12)
+    donator_phno=models.IntegerField()
     donatoremail=models.EmailField(max_length=400)
     donator_address=models.TextField()
 
 class ProductQuery(models.Model):
     productname=models.CharField(max_length=100)
     request=models.TextField(max_length=300)
-    quantity_needed=models.IntegerField(max_length=100000)
+    quantity_needed=models.IntegerField()
     reciever_name=models.CharField(max_length=100)
-    reciever_phno=models.IntegerField(max_length=12)
+    reciever_phno=models.IntegerField()
     recieveremail=models.EmailField(max_length=400)
     reciever_address=models.TextField()
     needed_by=models.DateField()
