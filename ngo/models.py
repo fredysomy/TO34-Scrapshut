@@ -6,10 +6,7 @@ class User(models.Model):
     email=models.EmailField(max_length=50)
     admin=models.BooleanField()
     phno=models.IntegerField()
-<<<<<<< HEAD
     password=models.TextField(max_length=10)
-=======
->>>>>>> 3a8e6bc7788e3a27f0eb3f48d6e93d9ad43ee5c1
 
 
 class Products(models.Model):
